@@ -169,7 +169,7 @@ fn datetime_at_issue(date: Date) -> String {
     date.format(&fmt).expect("datetime formatting cannot fail")
 }
 
-/// Strip spaces from a bank account entered as "36 1090 ...".
+/// Strip spaces from a bank account entered as "20 1610 ...".
 fn account_digits(account: &str) -> String {
     account.chars().filter(|c| !c.is_whitespace()).collect()
 }
