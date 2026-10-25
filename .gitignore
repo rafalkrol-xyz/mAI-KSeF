@@ -1,0 +1,16 @@
+# Rust build output
+/target
+
+# Real invoice config — contains private rates. NEVER commit.
+invoice.toml
+*.invoice.toml
+
+# Secrets — KSeF token must never be committed.
+.env
+*.token
+
+# Local KSeF artifacts:
+# + submitted XML,
+# + UPO (Urzędowe Poświadczenie Odbioru) documents, i.e. Official Confirmation of Receipt,
+# + QR codes
+/out
